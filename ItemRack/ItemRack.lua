@@ -938,7 +938,7 @@ end
 
 function ItemRack.IsSoulbound(bag,slot)
 	ItemRackTooltip:SetBagItem(bag,slot)
-	for i=2,5 do
+	for i=2,6 do
 		local text = _G["ItemRackTooltipTextLeft"..i]:GetText()
 		if text==ITEM_SOULBOUND or text==ITEM_BIND_QUEST or text==ITEM_CONJURED then
 			return 1
